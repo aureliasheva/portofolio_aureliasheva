@@ -5,13 +5,13 @@ import { Separator } from '@/components/ui/separator'
 
 const projects = [
   {
-    title: 'Portfolio website html',
+    title: 'Portofolio website html',
     description: 'Website portofolio pribadi untuk menampilkan project dan keterampilan.',
     tech: ['HTML', 'CSS'],
     github: 'https://github.com/username/project1',
   },
   {
-    title: 'Portfolio website Next.JS',
+    title: 'Portofolio website Next.JS',
     description: 'Website portofolio pribadi yang dibangun dengan Next.js dan Tailwind CSS.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Shadcn/ui'],
     github: 'https://github.com/username/project2',
