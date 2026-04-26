@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  transpilePackages: ["@tsparticles/react", "@tsparticles/slim", "@tsparticles/engine"],
 };
 
 export default nextConfig;
