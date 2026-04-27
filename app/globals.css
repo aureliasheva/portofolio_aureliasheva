@@ -2,7 +2,13 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-html, body, main {
-  background-color: oklch(11.757% 0.0326 280.154);
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  background-color: #09090b;
+  background-image: radial-gradient(circle at top center, rgba(37, 99, 235, 0.1) 0%, rgba(9, 9, 11, 1) 50%);
+  background-attachment: fixed;
+  color: #fafafa;
+}

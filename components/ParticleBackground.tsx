@@ -22,30 +22,29 @@ export default function ParticleBackground() {
       color: { value: "transparent" },
     },
     particles: {
-      color: { value: "#60a5fa" },
+      color: { value: "#e2e8f0" },
       links: {
-        color: "#60a5fa",
-        distance: 150,
-        enable: true,
-        opacity: 0.6,
-        width: 2,
+        enable: false,
       },
       move: {
         enable: true,
-        speed: 2,
-        direction: "none",
-        random: false,
+        speed: 0.6,
+        direction: "top",
+        random: true,
         straight: false,
         outModes: {
-          default: "bounce",
+          default: "out",
         },
       },
       number: {
         density: { enable: true, width: 800, height: 800 },
-        value: 100,
+        value: 50,
       },
-      opacity: { value: 0.9 },
-      size: { value: { min: 2, max: 6 } },
+      opacity: {
+        value: { min: 0.3, max: 0.7 },
+        animation: { enable: true, speed: 1, sync: false },
+      },
+      size: { value: { min: 1.5, max: 4 } },
     },
     detectRetina: true,
   };
