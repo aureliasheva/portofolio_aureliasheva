@@ -70,7 +70,7 @@ export default function Contact() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="text-zinc-500 text-sm mt-16"
         >
-          © {new Date().getFullYear()} Aurelia Sheva Denathrya. Dibangun dengan Next.js, Tailwind CSS & Framer Motion.
+          © {new Date().getFullYear()} Aurelia Sheva Denathrya. All rights reserved.
         </motion.p>
       </div>
     </section>
