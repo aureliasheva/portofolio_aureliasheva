@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Sheva | Portofolio</title>
+
+    <!-- CSS Murni -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- AOS Animation & Lucide Icons -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Particles Background container -->
+    <div id="tsparticles" class="fixed" style="inset: 0; pointer-events: none; z-index: -10;"></div>
+
+    <!-- NAVBAR -->
+    <div class="navbar-wrapper">
+        <nav id="navbar" class="navbar" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"
+            style="background-color: rgba(24, 24, 27, 0.4); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05);">
+            <a href="#" class="nav-brand">
+                AS<span class="text-blue-500">.</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-item" data-target="about">Tentang<div class="nav-pill"></div></a>
+                <a href="#projects" class="nav-item" data-target="projects">Project<div class="nav-pill"></div></a>
+                <a href="#skills" class="nav-item" data-target="skills">Keahlian<div class="nav-pill"></div></a>
+                <a href="#contact" class="nav-item" data-target="contact">Kontak<div class="nav-pill"></div></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="glow-circle"></div>
+            <div class="container hero-content">
+                <!-- Photo Section -->
+                <div data-aos="zoom-in" data-aos-duration="1000" class="hero-image-wrapper">
+                    <div class="hero-image-box">
+                        <div class="hero-image-blob"></div>
+                        <div class="hero-image-inner">
+                            <img src="./foto/foto-profil.png" alt="Foto Profil" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Section -->
+                <div class="hero-text">
+                    <h1 data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"
+                        class="title font-extrabold text-white tracking-tight">
+                        Halo, Saya <br class="hidden sm:block" />
+                        <span class="text-gradient">Aurelia Sheva</span> 👋
+                    </h1>
+
+                    <h2 data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"
+                        class="subtitle font-medium text-zinc-300">
+                        Web Developer
+                    </h2>
+
+                    <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="300" class="hero-desc">
+                        Saya adalah seorang web developer yang bersemangat dalam menciptakan pengalaman digital yang
+                        menarik dan fungsional. Dengan keahlian dalam <span class="text-white font-medium">HTML, CSS,
+                            JavaScript dan TypeScript</span>, saya siap membantu mewujudkan ide-ide kreatif Anda
+                        menjadi kenyataan.
+                    </p>
+
+                    <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="400" class="btn-group">
+                        <a href="#projects" class="btn btn-primary">Lihat Project Saya</a>
+                        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <div class="container-md">
+                <div data-aos="fade-up" data-aos-duration="600" class="section-header">
+                    <h2 class="title text-white" style="font-size: 2.25rem;">Tentang Saya</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="grid col-span-2">
+                    <!-- Main Bio Card -->
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="100" class="card"
+                        style="grid-column: span 1 / span 1;">
+                        <div class="flex-center gap-3 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-blue-400 w-6 h-6">
+                                <path d="m18 16 4-4-4-4" />
+                                <path d="m6 8-4 4 4 4" />
+                                <path d="m14.5 4-5 16" />
+                            </svg>
+                            <h3 class="text-xl font-semibold text-white">Developer Journey</h3>
+                        </div>
+                        <p class="text-zinc-300 leading-relaxed mb-4 text-lg">
+                            Saya adalah seorang web developer dengan passion dalam menciptakan pengalaman digital yang
+                            menarik dan fungsional. Dengan latar belakang di bidang teknologi informasi, saya memiliki
+                            keahlian dalam berbagai bahasa pemrograman dan framework modern seperti <span
+                                class="text-white font-medium">React, Next.js, dan Tailwind CSS</span>.
+                        </p>
+                        <p class="text-zinc-400 leading-relaxed">
+                            Saya selalu bersemangat untuk belajar teknologi baru dan menerapkannya dalam proyek-proyek
+                            yang memecahkan masalah dunia nyata.
+                        </p>
+                    </div>
+
+                    <div style="display: grid; gap: 1.5rem;">
+                        <!-- Info Cards -->
+                        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" class="card card-gradient">
+                            <div class="space-y-6">
+                                <div class="flex-center gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-zinc-800 flex-center justify-center shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-zinc-300 w-5 h-5">
+                                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                            <circle cx="12" cy="7" r="4" />
+                                        </svg>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <p class="text-xs text-zinc-500 uppercase tracking-wider">Nama</p>
+                                        <p class="text-white font-medium truncate">Aurelia Sheva</p>
+                                    </div>
+                                </div>
+                                <div class="flex-center gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-zinc-800 flex-center justify-center shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-zinc-300 w-5 h-5">
+                                            <path
+                                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-zinc-500 uppercase tracking-wider">Lokasi</p>
+                                        <p class="text-white font-medium">Magelang, ID</p>
+                                    </div>
+                                </div>
+                                <div class="flex-center gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-zinc-800 flex-center justify-center shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="text-zinc-300 w-5 h-5">
+                                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                        </svg>
+                                    </div>
+                                    <div class="overflow-hidden">
+                                        <p class="text-xs text-zinc-500 uppercase tracking-wider">Email</p>
+                                        <a href="mailto:Aurelarl2024@gmail.com"
+                                            class="text-white font-medium transition-colors truncate block"
+                                            style="cursor: pointer;">Hubungi via Email</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hobbies Card -->
+                        <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="300" class="card">
+                            <div class="flex-center gap-3 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-pink-400 w-6 h-6">
+                                    <path
+                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                </svg>
+                                <h3 class="text-xl font-semibold text-white">Di Luar Coding</h3>
+                            </div>
+                            <p class="text-zinc-400 leading-relaxed">
+                                Ketika tidak sedang menulis kode, saya menghabiskan waktu dengan mendengarkan musik,
+                                bermain game, berenang, berlari, dan terus mencari pengetahuan baru.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Availability Card -->
+                    <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400" class="availability-card"
+                        style="grid-column: 1 / -1;">
+                        <div class="bg-overlay"></div>
+                        <div class="z-10">
+                            <div class="flex-center gap-3" style="margin-bottom: 0.5rem;">
+                                <div class="ping-dot-container">
+                                    <span class="ping-dot-animate"></span>
+                                    <span class="ping-dot-core"></span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-white">Status Kerja</h3>
+                            </div>
+                            <p style="color: rgba(167, 243, 208, 0.8);" class="hidden sm:block">Tersedia untuk proyek
+                                baru</p>
+                        </div>
+                        <div class="z-10 badge">
+                            <span class="text-emerald-400 font-medium whitespace-nowrap text-sm">Freelance /
+                                Fulltime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @media (min-width: 768px) {
+                    #about .grid {
+                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="container-md">
+                <div data-aos="fade-up" data-aos-duration="600" class="section-header">
+                    <h2 class="title text-white" style="font-size: 2.25rem;">Project Saya</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="grid grid-cols-2 grid-cols-3" id="project-list">
+                    <!-- Project items will be generated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <div class="container-md">
+                <div data-aos="fade-up" data-aos-duration="600" class="section-header">
+                    <h2 class="title text-white" style="font-size: 2.25rem;">Keahlian</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="grid grid-cols-2 grid-cols-3" id="skill-list">
+                    <!-- Skill items will be generated by JS -->
+                </div>
+            </div>
+            <style>
+                @media (min-width: 768px) {
+                    #skills .grid {
+                        grid-template-columns: repeat(3, minmax(0, 1fr));
+                    }
+                }
+            </style>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section overflow-hidden">
+            <div class="glow-circle" style="background-color: rgba(37, 99, 235, 0.1);"></div>
+
+            <div class="contact-container">
+                <div data-aos="fade-up" data-aos-duration="800" class="contact-box">
+                    <h2 class="contact-title">Tertarik Bekerja Sama?</h2>
+                    <p class="contact-desc">
+                        Punya project menarik atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya. Mari
+                        ciptakan sesuatu yang luar biasa bersama-sama!
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="mailto:Aurelarl2024@gmail.com" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            Email Saya
+                        </a>
+                        <a href="https://github.com/aureliasheva" target="_blank" rel="noreferrer"
+                            class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                <path d="M9 18c-4.51 2-5-2-7-2" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/aurelia-sheva-denathrya-56070b405/" target="_blank"
+                            rel="noreferrer" class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="w-5 h-5">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <p data-aos="fade-up" data-aos-duration="600" data-aos-delay="200" class="text-zinc-500 text-sm mt-16">
+                    © <span id="current-year"></span> Aurelia Sheva Denathrya. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/engine@3.3.0/tsparticles.engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.3.0/tsparticles.slim.min.js"></script>
+
+    <script>
+        // Set Current Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Initialize AOS
+        AOS.init({
+            once: true,
+            offset: 100,
+        });
+
+        // --- Data Projects ---
+        const projects = [
+            {
+                title: 'MileBuzz (Tracking System)',
+                description: 'Solusi pelacakan pengiriman logistik hingga titik terakhir dengan presisi lokasi dan estimasi waktu realtime',
+                tech: ['Next.js', 'Tracking', 'OpenStreetMap', 'Geolocation'],
+                demo: 'https://compass-last-mile.vercel.app/',
+                icon: '<i data-lucide="navigation" class="text-blue-400 w-6 h-6"></i>'
+            },
+            {
+                title: 'SIG Satpol PP Prov. Jateng',
+                description: 'Sistem Informasi Geografis untuk pemetaan titik gangguan ketertiban umum dan manajemen penugasan personel operasional di lapangan.',
+                tech: ['WebGIS', 'Geolocation', 'Reporting System'],
+                demo: 'https://gis.satpolpp.jatengprov.go.id/',
+                icon: '<i data-lucide="map-pin" class="text-blue-400 w-6 h-6"></i>'
+            },
+            {
+                title: 'Sistem Laporan Penjualan BUMDes',
+                description: 'Platform pelaporan keuangan dan performa bisnis untuk seluruh entitas usaha milik desa di wilayah kabupaten.',
+                tech: ['Next.js', 'TailwindCSS', 'Accounting System'],
+                demo: 'https://growong.bumdesmglkab.com/',
+                icon: '<i data-lucide="bar-chart-2" class="text-blue-400 w-6 h-6"></i>'
+            },
+            {
+                title: 'Company Profile Wahana Sakti Geosolusi',
+                description: 'Website company profile untuk Wahana Sakti Geosolusi, perusahaan yang bergerak di bidang jasa Software Development & Geospatial Solutions.',
+                tech: ['Next.js', 'Tracking', 'OpenStreetMap', 'Geolocation'],
+                demo: 'https://www.wsg.co.id/',
+                icon: '<i data-lucide="briefcase" class="text-blue-400 w-6 h-6"></i>'
+            },
+            {
+                title: 'Monitoring Building Electrical Management',
+                description: 'Sistem manajemen energi gedung pintar yang memantau konsumsi listrik dan performa kelistrikan secara otomatis.',
+                tech: ['IoT Core', 'MQTT Protocol', 'React Dashboard'],
+                demo: 'https://building-energy-frontend.vercel.app/login',
+                icon: '<i data-lucide="zap" class="text-blue-400 w-6 h-6"></i>'
+            },
+            {
+                title: 'Portofolio website Next.JS',
+                description: 'Website portofolio pribadi yang dibangun dengan Next.js dan Tailwind CSS.',
+                tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Shadcn/ui'],
+                github: 'https://github.com/username/project2',
+                demo: 'https://portofolio-aureliasheva.vercel.app/',
+                icon: '<i data-lucide="monitor" class="text-blue-400 w-6 h-6"></i>'
+            },
+        ];
+
+        const projectList = document.getElementById('project-list');
+        projects.forEach((project, index) => {
+            const githubHTML = project.github ? `
+                <a href="${project.github}" target="_blank" rel="noreferrer" class="btn-github">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+            ` : '';
+
+            const techHTML = project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('');
+
+            const card = document.createElement('div');
+            card.className = "project-card";
+            card.setAttribute('data-aos', 'fade-up');
+            card.setAttribute('data-aos-duration', '600');
+            card.setAttribute('data-aos-delay', `${index * 100}`);
+
+            card.innerHTML = `
+                <div class="project-content">
+                    <div class="project-icon">
+                        ${project.icon}
+                    </div>
+                    <h3 class="project-title">${project.title}</h3>
+                    <p class="project-desc">${project.description}</p>
+                    <div class="project-tech">${techHTML}</div>
+                </div>
+                <div class="project-footer">
+                    <a href="${project.demo}" target="_blank" rel="noreferrer" class="btn-demo">
+                        <span>Live Demo</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                    </a>
+                    ${githubHTML}
+                </div>
+            `;
+            projectList.appendChild(card);
+        });
+
+        // --- Data Skills ---
+        const skillCategories = [
+            {
+                title: 'Frontend',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-blue-400"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+                skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'HTML', 'CSS']
+            },
+            {
+                title: 'Tools',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-purple-400"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+                skills: ['Git', 'VS Code']
+            },
+            {
+                title: 'Languages',
+                icon: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-emerald-400"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>',
+                skills: ['Indonesian']
+            }
+        ];
+
+        const skillList = document.getElementById('skill-list');
+        skillCategories.forEach((category, index) => {
+            const skillsHTML = category.skills.map(s => `<div class="skill-tag">${s}</div>`).join('');
+
+            const card = document.createElement('div');
+            card.className = "skill-card";
+            card.setAttribute('data-aos', 'fade-up');
+            card.setAttribute('data-aos-duration', '600');
+            card.setAttribute('data-aos-delay', `${index * 100}`);
+
+            card.innerHTML = `
+                <div class="skill-header">
+                    <div class="skill-icon-box">${category.icon}</div>
+                    <h3 class="skill-title">${category.title}</h3>
+                </div>
+                <div class="skill-list">
+                    ${skillsHTML}
+                </div>
+            `;
+            skillList.appendChild(card);
+        });
+
+        // --- Navbar ScrollSpy & Style ---
+        const navbar = document.getElementById('navbar');
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = Array.from(navItems).map(item => document.getElementById(item.getAttribute('data-target')));
+
+        window.addEventListener('scroll', () => {
+            // Navbar Background
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+                // Remove inline styles when scrolled class is added
+                navbar.style.backgroundColor = '';
+                navbar.style.backdropFilter = '';
+                navbar.style.webkitBackdropFilter = '';
+                navbar.style.border = '';
+            } else {
+                navbar.classList.remove('scrolled');
+                // Re-add base inline styles
+                navbar.style.backgroundColor = 'rgba(24, 24, 27, 0.4)';
+                navbar.style.backdropFilter = 'blur(12px)';
+                navbar.style.webkitBackdropFilter = 'blur(12px)';
+                navbar.style.border = '1px solid rgba(255, 255, 255, 0.05)';
+            }
+
+            // ScrollSpy
+            let current = '';
+            sections.forEach(section => {
+                if (!section) return;
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 250 && rect.bottom >= 250) {
+                    current = section.id;
+                }
+            });
+
+            if ((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight - 50) {
+                current = 'contact';
+            }
+
+            navItems.forEach(item => item.classList.remove('active'));
+
+            if (current) {
+                const activeItem = document.querySelector(`.nav-item[data-target="${current}"]`);
+                if (activeItem) activeItem.classList.add('active');
+            }
+        });
+
+        window.dispatchEvent(new Event('scroll'));
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navItems.forEach(n => n.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        document.querySelector('.nav-brand').addEventListener('click', () => {
+            navItems.forEach(n => n.classList.remove('active'));
+        });
+
+        // --- tsParticles ---
+        loadSlim(tsParticles).then(() => {
+            tsParticles.load({
+                id: "tsparticles",
+                options: {
+                    background: { color: { value: "transparent" } },
+                    particles: {
+                        color: { value: "#e2e8f0" },
+                        links: { enable: false },
+                        move: { enable: true, speed: 0.6, direction: "top", random: true, straight: false, outModes: { default: "out" } },
+                        number: { density: { enable: true, width: 800, height: 800 }, value: 50 },
+                        opacity: { value: { min: 0.3, max: 0.7 }, animation: { enable: true, speed: 1, sync: false } },
+                        size: { value: { min: 1.5, max: 4 } },
+                    },
+                    detectRetina: true,
+                }
+            });
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
